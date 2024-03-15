@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #3b70a1,
+    #3b70a1 30px,
+    #2a547a 30px,
+    #2a547a 60px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 1400px;
+  height: 850px;
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px rgb(16, 33, 65);
+  display: flex;
+  align-items: center;
+}
+
+.left-panel {
+  height: 800px;
+  width: 500px;
+}
+#hangman {
+  margin-top: 50px;
+
+  width: 500px;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+}
+.hangmanimg {
+  height: 650px;
+  width: auto;
+}
+.buttons {
+  height: 170px;
+  width: 560px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  width: 100px;
+  height: 80px;
+  border: 5px #000000 solid;
+  background-color: transparent;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.right-panel {
+  height: 900px;
+  width: 800px;
+}
+
+#password {
+  width: 900px;
+  height: 200px;
+  font-size: 100px;
+  padding-right: 100px;
+  text-align: center;
+  margin-top: 90px;
+  letter-spacing: 5px;
+}
+
+#letters {
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  margin-left: 65px;
+  font-size: 100px;
+}
+
+.letter {
+  float: left;
+  border: 5px #272727 solid;
+  width: 100px;
+  height: 85px;
+  border-radius: 20px;
+  margin: 1px;
+  font-size: 60px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.letter:hover {
+  border: 5px gray solid;
+  color: gray;
+}
+.break {
+  clear: both;
+}
+
+.reset {
+  color: green;
+  cursor: pointer;
+  font-size: 70px;
+}
+
+.you_won {
+  font-size: 45px;
+}
