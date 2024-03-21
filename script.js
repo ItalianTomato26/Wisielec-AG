@@ -1,4 +1,4 @@
-let password = "fjoletowv ";
+let password = "Piwko Tesco";
 password = password.toUpperCase();
 
 let length = password.length;
